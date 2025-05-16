@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fragrance Boutique" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" type="image/png" href="./assets/icons/favicon.png" />
+    <link
+      rel="preload"
+      href="./css/index.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./css/index.css" /></noscript>
+    <title>CLIVE CHRISTIAN</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <p>
+            Subscribe to our newsletter and stay updated with the latest
+            arrivals and exclusive offers!
+          </p>
+        </div>
+      </div>
+      <div class="container header-bottom">
+        <div>
+          <span class="header-bottom-span left hidden-mobile"
+            >Shop in region | EUR</span
+          >
+          <div class="mobile-tools hidden-desktop">
+            <button
+              aria-label="Mobile menu"
+              aria-expanded="false"
+              type="button"
+            >
+              <svg width="30" height="30">
+                <use href="./assets/icons/icons-sprite.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <a href="#">
+              <svg width="30" height="30">
+                <use
+                  href="./assets/icons/icons-sprite.svg#icon-heart-linear"
+                ></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="nav hidden-mobile-tablet">
+            <ul class="nav-menu">
+              <li><a href="#">Perfumes</a></li>
+              <li><a href="#">Gifts</a></li>
+              <li><a href="#">Stories</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Our services</a></li>
+            </ul>
+          </nav>
+        </div>
+        <a href="./index.html" class="logo">
+          <picture>
+            <source
+              srcset="./assets/images/logo-desktop.svg"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="./assets/images/logo-tablet.svg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./assets/images/logo-mobile.svg"
+              alt="Logo"
+              class="logo"
+            />
+          </picture>
+        </a>
+        <div>
+          <div class="header-bottom-socials-menu hidden-mobile">
+            <span class="header-bottom-span small">Boutiques</span>
+            <span class="header-bottom-span">|</span>
+            <ul class="header-bottom-socials">
+              <li class="header-bottom-social-item">
+                <a href="#"
+                  ><svg width="24" height="24">
+                    <use
+                      href="./assets/icons/icons-sprite.svg#icon-facebook"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="header-bottom-social-item">
+                <a href="#">
+                  <svg width="24" height="24">
+                    <use
+                      href="./assets/icons/icons-sprite.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-bottom-social-item">
+                <a href="#"
+                  ><svg width="24" height="24">
+                    <use
+                      href="./assets/icons/icons-sprite.svg#icon-instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="header-bottom-social-item">
+                <a href="#"
+                  ><svg width="24" height="24">
+                    <use
+                      href="./assets/icons/icons-sprite.svg#icon-youtube"
+                    ></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="user-menu-wrapper">
+            <div class="search-input-wrapper hidden-mobile-tablet">
+              <input
+                class="search-input"
+                type="text"
+                placeholder="I'm looking for..."
+              />
+              <svg class="search-input-icon" width="18" height="18">
+                <use href="./assets/icons/icons-sprite.svg#icon-search"></use>
+              </svg>
+            </div>
+            <ul class="user-menu">
+              <li>
+                <svg width="30" height="30">
+                  <use
+                    href="./assets/icons/icons-sprite.svg#icon-bag-outline"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="30" height="30">
+                  <use href="./assets/icons/icons-sprite.svg#icon-user"></use>
+                </svg>
+              </li>
+              <li class="hidden-mobile-tablet">
+                <svg width="30" height="30">
+                  <use
+                    href="./assets/icons/icons-sprite.svg#icon-heart-linear"
+                  ></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-title-wrapper">
+            <h1 class="hero-title">
+              <span class="hero-title-span">Explore</span>Our newest fragrances
+            </h1>
+          </div>
+          <div class="section-content-wrapper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card-thumb medium-card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./assets/images/mobile/product-1@2x.webp 1x,
+                          ./assets/images/mobile/product-1@3x.webp 2x
+                        "
+                        media="(min-width: 1440px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./assets/images/tablet/product-1@2x.webp 1x,
+                          ./assets/images/tablet/product-1@3x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./assets/images/mobile/product-1@2x.webp 1x,
+                          ./assets/images/mobile/product-1@3x.webp 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/mobile/product-1@2x.webp"
+                        alt="Product"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <button class="card-thumb-info" type="button">
+                      <span>Explore more</span
+                      ><svg class="card-thumb-info-icon" width="15" height="15">
+                        <use
+                          href="./assets/icons/icons-sprite.svg#icon-plus"
+                        ></use>
+                      </svg>
+                    </button>
+                    <button class="card-thumb-button" type="button">
+                      Raees vert
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-thumb big-card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./assets/images/mobile/product-2@2x.webp 1x,
+                          ./assets/images/mobile/product-2@3x.webp 2x
+                        "
+                        media="(min-width: 1440px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./assets/images/tablet/product-2@2x.webp 1x,
+                          ./assets/images/tablet/product-2@3x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./assets/images/mobile/product-2@2x.webp 1x,
+                          ./assets/images/mobile/product-2@3x.webp 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/mobile/product-2@2x.webp"
+                        alt="Product"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <button class="card-thumb-info" type="button">
+                      <span>Explore more</span
+                      ><svg class="card-thumb-info-icon" width="15" height="15">
+                        <use
+                          href="./assets/icons/icons-sprite.svg#icon-plus"
+                        ></use>
+                      </svg>
+                    </button>
+                    <button class="card-thumb-button" type="button">
+                      Raees vert
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-thumb small-card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./assets/images/mobile/product-3@2x.webp 1x,
+                          ./assets/images/mobile/product-3@3x.webp 2x
+                        "
+                        media="(min-width: 1440px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./assets/images/tablet/product-3@2x.webp 1x,
+                          ./assets/images/tablet/product-3@3x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./assets/images/mobile/product-3@2x.webp 1x,
+                          ./assets/images/mobile/product-3@3x.webp 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./assets/images/mobile/product-3@2x.webp"
+                        alt="Product"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <button class="card-thumb-info">
+                      <span>Explore more</span
+                      ><svg class="card-thumb-info-icon" width="15" height="15">
+                        <use
+                          href="./assets/icons/icons-sprite.svg#icon-plus"
+                        ></use>
+                      </svg>
+                    </button>
+                    <button class="card-thumb-button" type="button">
+                      Raees vert
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-description-wrapper">
+              <p class="hero-description">
+                Dive into our latest collection of exquisite scents, crafted for
+                discerning connoisseurs like you. Discover the perfect fragrance
+                that complements your unique style and leaves a lasting
+                impression.
+              </p>
+              <span class="hero-description-span">Discover our</span>
+              <a href="#" class="hero-description-button">Latest additions</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="js/swiper-init.js" defer></script>
+  </body>
+</html>
