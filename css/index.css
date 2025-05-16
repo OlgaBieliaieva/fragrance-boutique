@@ -421,7 +421,7 @@ input {
   background-color: var(--color-black);
 }
 .hero-container {
-  min-height: 766px;
+  height: 863px;
   padding-top: var(--space-l);
   padding-bottom: var(--space-xxl);
   padding-right: 0;
@@ -486,11 +486,13 @@ input {
       url(../assets/images/desktop/newest-fragrances-bg@3x.webp);
   }
   @media (min-width: 768px) {
+    height: 823px;
     padding-top: var(--space-xxl);
     padding-bottom: var(--space-xxxl);
     padding-right: var(--space-xl);
   }
   @media (min-width: 1440px) {
+    height: 766px;
     padding-top: 72px;
     padding-right: var(--space-xxxl);
     padding-bottom: 100px;
