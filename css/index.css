@@ -184,6 +184,20 @@ input {
     padding: 14px 0;
   }
 }
+.logo {
+  width: 73px;
+  height: 63px;
+
+  @media (min-width: 768px) {
+    width: 142px;
+    height: 60px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 207px;
+    height: 88px;
+  }
+}
 .header-bottom {
   position: relative;
   padding-top: var(--space-xxxs);
@@ -491,6 +505,7 @@ input {
 }
 .hero-title {
   width: 244px;
+  height: 125px;
   margin: 0 auto;
   margin-bottom: var(--space-l);
   text-align: center;
@@ -504,6 +519,7 @@ input {
 
   @media (min-width: 1440px) {
     width: 412px;
+    height: 155px;
     margin-bottom: 85px;
     font-size: var(--fs-xxl);
     line-height: 1.37;
